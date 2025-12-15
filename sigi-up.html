@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Customer Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #004D40; /* Deep dark teal */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #FFFFFF; /* White text for contrast */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Adjust for 16:9 aspect ratio feel, but keep responsive */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00FFFF; /* Bright cyan */
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #00FFFF; /* Cyan outline */
+            border-radius: 5px;
+            background-color: #00695C; /* Slightly lighter teal for inputs */
+            color: #FFFFFF;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            color: #B2DFDB; /* Light teal for placeholders */
+        }
+
+        button {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: transparent;
+            border: 2px solid #00FFFF; /* Vibrant cyan outline */
+            color: #00FFFF;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00FFFF;
+            color: #004D40;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .login-link a {
+            color: #00FFFF;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Customer Sign Up System</h1>
+        <form>
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="login-link">
+            You have an account? <a href="#">Login</a>
+        </div>
+    </div>
+</body>
+</html>
